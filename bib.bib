@@ -1,0 +1,1342 @@
+@InProceedings{Ball2001,
+author = {Ball, Thomas and Majumdar, Rupak and Millstein, Todd and Rajamani,
+                  Sriram K.},
+title = {Automatic predicate abstraction of C programs},
+booktitle = {Proc.~of PLDI},
+year = {2001},
+pages = {203--213},
+numpages = {11},
+
+}
+
+@Book{Dijkstra76,
+  author =  "Edsger W. Dijkstra",
+  title =   "A Discipline of Programming",
+  publisher =     "Prentice-Hall",
+  year =    "1976",
+  address = "Englewood Cliffs, New Jersey",
+ }
+
+@InProceedings{GrafSaidi97,
+   author =  "Susanne Graf and Hassen Sa{\"\i{}}di",
+  booktitle =  "Proc.~of CAV",
+  month =   jun,
+  pages =   "72--83",
+  publisher = "Springer-Verlag",
+  title =   "Construction of Abstract State Graphs with {PVS}",
+  volume =  "1254",
+  year =    "1997",
+}
+
+@article{Monniaux2001,
+ author = {Monniaux, David},
+ title = {An Abstract Monte-Carlo Method for the Analysis of Probabilistic
+                  Programs},
+ journal = {SIGPLAN Not.},
+ issue_date = {March 2001},
+ volume = {36},
+ number = {3},
+ month = jan,
+ year = {2001},
+ issn = {0362-1340},
+ pages = {93--101},
+ numpages = {9},
+ doi = {10.1145/373243.360211},
+ acmid = {360211},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{Sankaranarayanan:2013,
+ author = {Sankaranarayanan, Sriram and Chakarov, Aleksandar and Gulwani,
+                  Sumit},
+ title = {Static Analysis for Probabilistic Programs: Inferring Whole Program
+                  Properties from Finitely Many Paths},
+ journal = {SIGPLAN Not.},
+ issue_date = {June 2013},
+ volume = {48},
+ number = {6},
+ month = jun,
+ year = {2013},
+ issn = {0362-1340},
+ pages = {447--458},
+ numpages = {12},
+ doi = {10.1145/2499370.2462179},
+ acmid = {2462179},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {monte-carlo sampling, probabilistic programming, program
+                  verification, symbolic execution, volume bounding},
+}
+
+@misc{Albarghouthi2017,
+Author = {Aws Albarghouthi and Loris D'Antoni and Samuel Drews and Aditya Nori},
+Title = {Quantifying Program Bias},
+Year = {2017},
+Eprint = {arXiv:1702.05437},
+}
+
+@inproceedings{Sampson2014,
+ author = {Sampson, Adrian and Panchekha, Pavel and Mytkowicz, Todd and
+                  McKinley, Kathryn S. and Grossman, Dan and Ceze, Luis},
+ title = {Expressing and Verifying Probabilistic Assertions},
+ booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming
+                  Language Design and Implementation},
+ series = {PLDI},
+ year = {2014},
+ isbn = {978-1-4503-2784-8},
+ location = {Edinburgh, United Kingdom},
+ pages = {112--122},
+ numpages = {11},
+ acmid = {2594294},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {approximate computing, data obfuscation, differential privacy,
+                  probabilistic programming, sensors, symbolic execution},
+}
+
+
+@inproceedings{Chistikov2015,
+ author = {Chistikov, Dmitry and Dimitrova, Rayna and Majumdar, Rupak},
+ title = {Approximate Counting in SMT and Value Estimation for Probabilistic Programs},
+ booktitle = {Proc.~of TACAS},
+ year = {2015},
+ isbn = {978-3-662-46680-3},
+ pages = {320--334},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1007/978-3-662-46681-0_26},
+ doi = {10.1007/978-3-662-46681-0_26},
+ acmid = {2945619},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {New York, NY, USA},
+} 
+
+@article{Russell2015,
+author = {Russell, Stuart J},
+title = {{SWIFT : Compiled Inference for Probabilistic Programs}},
+year = {2015}
+}
+
+@article{Grigore2016,
+abstract = {The core challenge in designing an effective static program analysis
+                  is to find a good program abstraction -- one that retains only
+                  details relevant to a given query. In this paper, we present a
+                  new approach for automatically finding such an abstraction.
+                  Our approach uses a pessimistic strategy, which can optionally
+                  use guidance from a probabilistic model. Our approach applies
+                  to parametric static analyses implemented in Datalog, and is
+                  based on counterexample-guided abstraction refinement. For
+                  each untried abstraction, our probabilistic model provides a
+                  probability of success, while the size of the abstraction
+                  provides an estimate of its cost in terms of analysis time.
+                  Combining these two metrics, probability and cost, our
+                  refinement algorithm picks an optimal abstraction. Our
+                  probabilistic model is a variant of the Erdos-Renyi random
+                  graph model, and it is tunable by what we call
+                  hyperparameters. We present a method to learn good values for
+                  these hyperparameters, by observing past runs of the analysis
+                  on an existing codebase. We evaluate our approach on an object
+                  sensitive pointer analysis for Java programs, with two client
+                  analyses (PolySite and Downcast).},
+archivePrefix = {arXiv},
+arxivId = {1511.01874},
+author = {Grigore, Radu and Yang, Hongseok},
+doi = {10.1145/2837614.2837663},
+eprint = {1511.01874},
+isbn = {978-1-4503-3549-2},
+issn = {15232867},
+journal = {Proc.~of POPL},
+keywords = {Datalog,Horn,hypergraph,probability},
+pages = {485--498},
+title = {{Abstraction Refinement Guided by a Learnt Probabilistic Model}},
+year = {2016}
+}
+
+@article{Claret2013,
+abstract = {We present a new algorithm for Bayesian inference over probabilistic
+                  programs, based on data flow analysis techniques from the
+                  program analysis community. Unlike existing techniques for
+                  Bayesian inference on probabilistic programs, our data flow
+                  analysis algorithm is able to perform inference directly on
+                  probabilistic programs with loops. Even for loop-free
+                  programs, we show that data flow analysis offers better
+                  precision and better performance benefits over existing
+                  techniques. We also describe heuristics that are crucial for
+                  our inference to scale, and present an empirical evaluation of
+                  our algorithm over a range of benchmarks.},
+author = {Claret, Guillaume and Rajamani, Sriram K and Nori, Aditya V and
+                  Gordon, Andrew D and Borgstr{\"{o}}m, Johannes},
+doi = {10.1145/2491411.2491423},
+isbn = {978-1-4503-2237-9},
+journal = {J. Foundations of Software Engineering},
+keywords = {algebraic decision diagrams,data flow analysis,probabilistic
+                  programming},
+pages = {92--102},
+title = {{Bayesian Inference Using Data Flow Analysis}},
+year = {2013}
+}
+
+@InProceedings{Cousot2012,
+author = {Cousot, Patrick and Monerau, Michael},
+doi = {10.1007/978-3-642-28869-2\_9},
+isbn = {9783642288685},
+issn = {03029743},
+booktitle = {Proc.~of ESOP},
+pages = {169--193},
+title = {{Probabilistic abstract interpretation}},
+year = {2012}
+}
+
+@article{Pierro,
+author = {Pierro, Alessandra Di and Wiklicky, Herbert},
+number = {i},
+title = {{Probabilistic Abstract Intepretation : From Trace Semantics to DTMCs
+                  via Linear Regression}}
+}
+
+@article{Prekopa2003,
+abstract = {Probabilistic programming means two strongly connected models as
+                  well as the study of their mathematical properties, solutions
+                  of the relevant optimization problems and their applications.
+                  The two models are: maximizing (or minimizing) a probability
+                  under constraints and programming under probabilistic
+                  constraints. There are a number of variants and special cases
+                  of these models and we present them in Section 1. In Section 2
+                  we summarize those mathematical theories which can be used to
+                  prove the convexity of large classes of our problems and we
+                  also show how they can be applied in this context. In Section
+                  3 we present solution algorithms of our stochastic programming
+                  problems. Since we are handling probabilities of sets in
+                  higher dimensional spaces, it is necessary to use bounding and
+                  other approximation algorithms to find these probabilities
+                  with satisfactory precision. This is the subject of Section 5.
+                  In Section 4 we present two-stage and multi-stage problems
+                  which are combined with probabilistic constraints. Some
+                  duality and stability theorems are presented in Section 6.
+                  Finally, in Section 7, we present applications of our model
+                  constructions. {\textcopyright} 2003 Elsevier Inc. All rights
+                  reserved.},
+archivePrefix = {arXiv},
+arxivId = {1312.4328},
+author = {Pr{\'{e}}kopa, Andr{\'{a}}s},
+doi = {10.1016/S0927-0507(03)10005-9},
+eprint = {1312.4328},
+isbn = {9781450328654},
+issn = {09270507},
+journal = {Handbooks in Operations Research and Management Science},
+number = {C},
+pages = {267--351},
+title = {{Probabilistic Programming}},
+volume = {10},
+year = {2003}
+}
+
+@article{Chaganty2013,
+author = {Chaganty, Arun and Nori, Aditya V and Rajamani, Sriram K},
+issn = {15337928},
+journal = {Proc.~of AISTATS},
+pages = {153--160},
+title = {{Efficiently Sampling Probabilistic Programs via Program Analysis}},
+volume = {31},
+year = {2013}
+}
+
+@article{Hur2014,
+abstract = {Probabilistic programs use familiar notation of programming
+                  languages to specify probabilistic models. Suppose we are
+                  interested in estimating the distribution or expectation of a
+                  return expression r of a probabilistic program P. We are
+                  interested in slicing the probabilistic program P and obtain a
+                  simpler program SLI(P) which retains only those parts of P
+                  that are relevant to estimating r, and elides those parts P
+                  that are not relevant to estimating r. We desire that the SLI
+                  transformation be both correct and efficient. By correct, we
+                  mean that P and SLI(P) have identical estimates on r. By
+                  efficient, we mean that estimation over SLI(P) be as small as
+                  possible. We show that usual notions of program slicing, which
+                  traverse control and data dependencies backward from the
+                  return expression r, are unsatisfactory for probabilistic
+                  programs, since it produces incorrect results on some programs
+                  and inefficient results on others. Our key insight is that in
+                  addition to the usual notions of control dependence and data
+                  dependence that are used to slice non-probabilistic programs,
+                  a new kind of dependence called observe dependence arises
+                  naturally due to observe statements in probabilistic programs.
+                  We propose a new definition of SLI(P) which is both correct
+                  and efficient for probabilistic programs, by including observe
+                  dependence in addition to control and data dependences for
+                  computing slices. We prove correctness mathematically, and we
+                  demonstrate efficiency empirically. We show that by applying
+                  the SLI transformation as a pre-pass, we can improve the
+                  efficiency of probabilistic inference, not only in our own
+                  inference tool R2, but also in other systems for performing
+                  inference such as Church and Infer.NET.},
+author = {Hur, Chung-Kil and Nori, Aditya V. and Rajamani, Sriram K. and Samuel,
+                  Selva},
+doi = {10.1145/2594291.2594303},
+isbn = {9781450327848},
+journal = {Proc.~of PLDI},
+keywords = {bayesian,probabilistic programming,program slicing},
+pages = {133--144},
+title = {{Slicing probabilistic programs}},
+year = {2014}
+}
+
+@article{Carpenter2016,
+author = {Carpenter, Bob and Gelman, Andrew and Hoffman, Matt and Lee, Daniel
+                  and Goodrich, Ben and Betancourt, Michael and Brubaker, Marcus
+                  A and Li, Peter and Riddell, Allen},
+journal = {J. Statistical Software},
+number = {Ii},
+title = {Stan: A Probabilistic Programming Language},
+volume = {VV},
+year = {2016}
+}
+
+@article{Vlasselaer,
+author = {Vlasselaer, Jonas and Renkens, Joris and Broeck, Guy Van Den and
+                  Raedt, Luc De},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Vlasselaer et
+                  al/Unknown/plp{\_}sdd.pdf:pdf},
+title = {{Compiling Probabilistic Logic Programs into Sentential Decision
+                  Diagrams}},
+year = {2015}
+}
+
+
+@article{Gordon2014,
+abstract = {We propose a new kind of probabilistic programming language for
+                  machine learning. We write programs simply by annotating
+                  existing relational schemas with probabilistic model
+                  expressions. We describe a detailed design of our language,
+                  Tabular, complete with formal semantics and type system. A
+                  rich series of examples illustrates the expressiveness of
+                  Tabular. We report an implementation, and show evidence of the
+                  succinctness of our notation relative to current best
+                  practice. Finally, we describe and verify a transformation of
+                  Tabular schemas so as to predict missing values in a concrete
+                  database. The ability to query for missing values provides a
+                  uniform interface to a wide variety of tasks, including
+                  classification, clustering, recommendation, and ranking.},
+author = {Gordon, Andrew D and Graepel, Thore and Rolland, Nicolas and Russo,
+                  Claudio and Borgstrom, Johannes and Guiver, John},
+doi = {10.1145/2535838.2535850},
+isbn = {9781450325448},
+issn = {15232867},
+journal = {Proc.~of POPL},
+keywords = {a column may have,a type such as,as well as scalar,bayesian
+                  reasoning,link,machine
+                  learning,model-learner,or,pattern,player 1
+                  wins,players,probabilistic programming,relational
+                  data,string,types such as bool,which,win1},
+number = {1},
+pages = {321--334},
+title = {{Tabular: a schema-driven probabilistic programming language}},
+year = {2014}
+}
+
+@article{Borgstrom2013,
+arxivId = {1308.0689},
+author = {Borgstr{\"{o}}m, Johannes and Gordon, Andrew D and Greenberg, Michael
+                  and Margetson, James and {Van Gael}, Jurgen},
+doi = {10.2168/LMCS-9(3:11)2013},
+eprint = {1308.0689},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Borgstr{\"{o}}m et
+                  al/Unknown/Borgstr{\"{o}}m et al. - 2013 - Measure Transformer
+                  Semantics for Bayesian Machine Learning.pdf:pdf},
+journal = {Proc~.of ESOP},
+pages = {77--96},
+title = {{Measure Transformer Semantics for Bayesian Machine Learning}},
+volume = {6602},
+year = {2013}
+}
+
+
+@inproceedings{Cousot1977,
+ author = {Cousot, Patrick and Cousot, Radhia},
+ title = {Abstract Interpretation: A Unified Lattice Model for Static Analysis
+                  of Programs by Construction or Approximation of Fixpoints},
+ booktitle = {Proc.~of POPL},
+ year = {1977},
+ location = {Los Angeles, California},
+ pages = {238--252},
+ numpages = {15},
+ doi = {10.1145/512950.512973},
+ acmid = {512973},
+}
+
+@article{Clarke2003,
+ author = {Clarke, Edmund and Grumberg, Orna and Jha, Somesh and Lu, Yuan and
+                  Veith, Helmut},
+ title = {Counterexample-guided Abstraction Refinement for Symbolic Model
+                  Checking},
+ journal = {J. ACM},
+ issue_date = {September 2003},
+ volume = {50},
+ number = {5},
+ month = sep,
+ year = {2003},
+ issn = {0004-5411},
+ pages = {752--794},
+ numpages = {43},
+ doi = {10.1145/876638.876643},
+ acmid = {876643},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Abstraction, hardware verification, symbolic model checking,
+                  temporal logic},
+}
+
+@article{Jhala2009,
+abstract = {We survey recent progress in software model checking.},
+author = {Jhala, Ranjit and Majumdar, Rupak},
+doi = {10.1145/1592434.1592438},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Jhala, Majumdar/ACM Computing
+                  Surveys/Model-checking-Survey-a21-jhala.pdf:pdf},
+isbn = {9783540331025},
+issn = {03600300},
+journal = {ACM Computing Surveys},
+number = {4},
+pages = {1--54},
+title = {{Software model checking}},
+volume = {41},
+year = {2009}
+}
+
+@inproceedings{DeMoura2008,
+ author = {De Moura, Leonardo and Bj{\o}rner, Nikolaj},
+ title = {Z3: An Efficient SMT Solver},
+ booktitle = {Proc.~of TACAS/ETAPS},
+ year = {2008},
+ isbn = {3-540-78799-2, 978-3-540-78799-0},
+ location = {Budapest, Hungary},
+ pages = {337--340},
+ numpages = {4},
+ acmid = {1792766},
+ address = {Berlin, Heidelberg},
+}
+
+
+@INPROCEEDINGS{Goodman08,
+    author = {Noah D. Goodman and Vikash K. Mansinghka and Daniel M. Roy and Keith Bonawitz and Joshua B. Tenenbaum},
+    title = {Church: A language for generative models},
+    booktitle = {Proc.~of UAI},
+    year = {2008},
+    pages = {220--229}
+}
+
+@article{Raedt2007,
+author = {Raedt, Luc De and Kimmig, Angelika and Toivonen, Hannu},
+journal = {Proc.~of IJCAI},
+keywords = {inductive logic programming,intelligent databases,probabilistic reasoning,theorem proving},
+pages = {2468--2473},
+title = {{ProbLog : A Probabilistic Prolog and Its Applications to Link}},
+year = {2007}
+}
+
+@article{Morgan1996,
+author = {Morgan, Carroll and McIver, Annabelle and Seidel, Karen},
+doi = {10.1145/229542.229547},
+issn = {01640925},
+journal = {J. Programming Languages \& Systems},
+number = {3},
+pages = {325--353},
+title = {{Probabilistic predicate transformers}},
+volume = {18},
+year = {1996}
+}
+
+@article{Ramsey2002,
+ author = {Ramsey, Norman and Pfeffer, Avi},
+ title = {Stochastic Lambda Calculus and Monads of Probability Distributions},
+ journal = {SIGPLAN Not.},
+ issue_date = {Jan. 2002},
+ volume = {37},
+ number = {1},
+ month = jan,
+ year = {2002},
+ issn = {0362-1340},
+ pages = {154--165},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/565816.503288},
+ doi = {10.1145/565816.503288},
+ acmid = {503288},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+
+@book{Pfeffer16,
+ author = {Pfeffer, Avi},
+ title = {Practical Probabilistic Programming},
+ year = {2016},
+ publisher = {Manning Publications},
+} 
+
+@article{Clark2007,
+author = {Clark, David and Hunt, Sebastian and Malacaria, Pasquale},
+journal = {J. Computer Security},
+number = {3},
+pages = {321--371},
+title = {{A static analysis for quantifying information flow in a simple imperative language}},
+volume = {15},
+year = {2007}
+}
+
+@article{Gehr2016,
+title = {PSI: Exact symbolic inference for probabilistic programs},
+year = {2016},
+author = {Gehr, Timon and Misailovic, Sasa and Vechev, Martin},
+isbn = {9783319415277},
+issn = {16113349},
+journal = {Proc.~of ESOP/ETAPS},
+pages = {62--83},
+volume = {9779}
+}
+
+@article{McCallum2009,
+author = {McCallum, A and Schultz, K and Singh, S},
+isbn = {9781615679119},
+issn = {03643417},
+journal = {Proc.~of NIPS},
+pages = {1249--1257},
+pmid = {12289432},
+title = {{Factorie: Probabilistic programming via imperatively defined factor graphs}},
+volume = {22},
+year = {2009}
+}
+
+@book{Wasserman2010,
+ author = {Wasserman, Larry},
+ title = {All of Statistics: A Concise Course in Statistical Inference},
+ year = {2010},
+ isbn = {1441923225, 9781441923226},
+ publisher = {Springer Publishing Company, Incorporated},
+} 
+
+@inproceedings{Wood2014,
+  author = {Wood, Frank and van de Meent, Jan Willem and Mansinghka, Vikash},
+  booktitle = {Proc.~of AISTATS},
+  title = {A New Approach to Probabilistic Programming Inference},
+  pages = {1024-1032},
+  year = {2014}
+}
+
+@article{Darwiche2002,
+ author = {Darwiche, Adnan and Marquis, Pierre},
+ title = {A Knowledge Compilation Map},
+ journal = {J. Artif. Int. Res.},
+ issue_date = {July 2002},
+ volume = {17},
+ number = {1},
+ month = sep,
+ year = {2002},
+ issn = {1076-9757},
+ pages = {229--264},
+ numpages = {36},
+ url = {http://dl.acm.org/citation.cfm?id=1622810.1622817},
+ acmid = {1622817},
+ publisher = {AI Access Foundation},
+ address = {USA},
+} 
+
+
+
+
+@article{Darwiche2011,
+author = {Darwiche, Adnan},
+doi = {10.5591/978-1-57735-516-8/IJCAI11-143},
+isbn = {9781577355120},
+issn = {10450823},
+journal = {Proc.~of IJCAI},
+keywords = {Knowledge Representation, Reasoning, and Logic},
+pages = {819--826},
+title = {{SDD: A new canonical representation of propositional knowledge bases}},
+year = {2011}
+}
+
+@article{Kisa2014,
+abstract = {We propose the Probabilistic Sentential Decision Diagram (PSDD): A complete and canonical representation of probability distributions defined over the models of a given propositional theory. Each parameter of a PSDD can be viewed as the (conditional) probability of making a decision in a corresponding Sentential Decision Diagram (SDD). The SDD itself is a recently proposed complete and canonical representation of propositional theories. We explore a number of interesting properties of PSDDs, including the in},
+author = {Kisa, Doga and {Van den Broeck}, Guy},
+journal = {Proc.~of KR},
+title = {{Probabilistic Sentential Decision Diagrams}},
+year = {2014}
+}
+
+@inproceedings{Chakraborty2013,
+ author = {Chakraborty, Supratik and Meel, Kuldeep S. and Vardi, Moshe Y.},
+ title = {A Scalable Approximate Model Counter},
+ booktitle = {Proc.~of CP},
+ year = {2013},
+ pages = {200--216},
+ numpages = {17},
+} 
+
+
+@inproceedings{Zhao2016,
+  author    = {Shengjia Zhao and
+               Sorathan Chaturapruek and
+               Ashish Sabharwal and
+               Stefano Ermon},
+  title     = {Closing the Gap Between Short and Long XORs for Model Counting},
+  booktitle = {Proc.~of AAAI},
+  pages     = {3322--3329},
+  year      = {2016},
+}
+
+@book{Baier:2008:PMC:1373322,
+ author = {Baier, Christel and Katoen, Joost-Pieter},
+ title = {Principles of Model Checking (Representation and Mind Series)},
+ year = {2008},
+ isbn = {026202649X, 9780262026499},
+ publisher = {The MIT Press},
+} 
+
+@book{Clarke2000,
+ author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ title = {Model Checking},
+ year = {1999},
+ isbn = {0-262-03270-8},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+}
+
+@Inproceedings{Ball2000,
+author="Ball, Thomas
+and Rajamani, Sriram K.",
+title="Bebop: A Symbolic Model Checker for Boolean Programs",
+bookTitle="SPIN Model Checking and Software Verification",
+year="2000",
+pages="113--130",
+}
+
+@inproceedings{minka2001expectation,
+  title={Expectation propagation for approximate Bayesian inference},
+  author={Minka, Thomas P},
+  booktitle={Proceedings of the Seventeenth conference on Uncertainty in artificial intelligence},
+  pages={362--369},
+  year={2001},
+  organization={Morgan Kaufmann Publishers Inc.}
+}
+
+@inproceedings{Donaldson2011,
+  AUTHOR    = { Donaldson, Alastair
+                and Kaiser, Alexander
+                and Kroening, Daniel
+                and Wahl, Thomas },
+  TITLE     = { Symmetry-Aware Predicate Abstraction for Shared-Variable Concurrent Programs },
+  BOOKTITLE = { Proc.~of CAV },
+  YEAR      = { 2011 },
+  PUBLISHER = { Springer },
+  PAGES     = { 356--371 },
+  SERIES    = { LNCS },
+  VOLUME    = { 6806 },
+}
+
+@article{Valiant1979,
+  author = {Valiant, Leslie G.},
+  journal = {J. Theoretical Computer Science},
+  keywords = {complexity counting permanent},
+  pages = {189-201},
+  title = {The Complexity of Computing the Permanent},
+  volume = 8,
+  year = 1979
+}
+
+
+@InCollection{GomesSS09,
+  title =   "Model Counting",
+  author =  "Carla P. Gomes and Ashish Sabharwal and Bart Selman",
+  bibdate = "2017-05-16",
+  bibsource =     "DBLP,
+             http://dblp.uni-trier.de/https://doi.org/10.3233/978-1-58603-929-5-633;
+             DBLP,
+             http://dblp.uni-trier.de/db/series/faia/faia185.html#GomesSS09",
+  booktitle =     "Handbook of Satisfiability",
+  publisher =     "IOS Press",
+  year =    "2009",
+  volume =  "185",
+  editor =  "Armin Biere and Marijn Heule and Hans van Maaren and
+             Toby Walsh",
+  ISBN =    "978-1-58603-929-5",
+  pages =   "633--654",
+  series =  "Frontiers in Artificial Intelligence and
+             Applications",
+}
+
+@inproceedings{Monniaux2000,
+ author = {Monniaux, David},
+ title = {Abstract Interpretation of Probabilistic Semantics},
+ booktitle = {International Symposium on Static Analysis},
+ year = {2000},
+ isbn = {3-540-67668-6},
+ pages = {322--339},
+ numpages = {18},
+ acmid = {718164},
+} 
+
+@INPROCEEDINGS{Milch05,
+    author = {Brian Milch and Bhaskara Marthi and Stuart Russell and David Sontag and Daniel L. Ong and Andrey Kolobov},
+    title = {Blog: Probabilistic models with unknown objects},
+    booktitle = {Proc.~of IJCAI},
+    year = {2005},
+    pages = {1352--1359}
+}
+
+@article{Fierens2013,
+title={Inference and learning in probabilistic logic programs using weighted Boolean formulas},
+author={Fierens, Daan and Van den Broeck, Guy and Renkens,
+                  Joris and Shterionov, Dimitar and Gutmann, Bernd and Thon,
+                  Ingo and Janssens, Gerda and De Raedt, Luc},
+journal={J. Theory and Practice of Logic Programming}, year={2013},
+pages = {358 - 401},
+volume = {15(3)}
+}
+
+@inproceedings{Michels2016,
+ author = {Michels, Steffen and Hommersom, Arjen and Lucas, Peter J. F.},
+ title = {Approximate Probabilistic Inference with Bounded Error for Hybrid Probabilistic Logic Programming},
+ booktitle = {Proc.~of IJCAI},
+ year = 2016,
+ pages = {3616--3622},
+} 
+
+@inproceedings{kersting2012lifted,
+  title={Lifted probabilistic inference},
+  author={Kersting, Kristian},
+  booktitle={Proc.~of ECAI},
+  pages={33--38},
+  year={2012},
+}
+
+@inproceedings{Holtzen17,
+  author    = {Holtzen, Steven and Millstein, Todd and Van den Broeck, Guy},
+  title     = {Probabilistic Program Abstractions},
+  booktitle = {Proceedings of UAI},
+  year={2017},
+}
+
+@article{Chavira2008,
+ author = {Chavira, Mark and Darwiche, Adnan},
+ title = {On Probabilistic Inference by Weighted Model Counting},
+ journal = {J. Artificial Intelligence},
+ issue_date = {April, 2008},
+ volume = 172,
+ number = {6-7},
+ month = apr,
+ year = 2008,
+ issn = {0004-3702},
+ pages = {772--799},
+ numpages = 28,
+ url = {http://dx.doi.org/10.1016/j.artint.2007.11.002},
+ doi = {10.1016/j.artint.2007.11.002},
+ acmid = 1342783,
+ publisher = {Elsevier Science Publishers Ltd.},
+ address = {Essex, UK},
+ keywords = {Bayesian networks, Compilation, Exact inference, Weighted model counting},
+} 
+
+
+@inproceedings{Zhang:2017,
+ author = {Zhang, Xin and Si, Xujie and Naik, Mayur},
+ title = {Combining the Logical and the Probabilistic in Program Analysis},
+ booktitle = {Proc.~ACM SIGPLAN International Workshop on Machine Learning and Programming Languages},
+ year = {2017},
+ isbn = {978-1-4503-5071-6},
+ location = {Barcelona, Spain},
+ pages = {27--34},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/3088525.3088563},
+ doi = {10.1145/3088525.3088563},
+ acmid = {3088563},
+ keywords = {Logic, Markov Logic Network, Maximum Satisfiability, Probability, Program Analysis},
+}
+
+@inproceedings{Ball:2002,
+ author = {Ball, Thomas and Rajamani, Sriram K.},
+ title = {The {SLAM} Project: Debugging System Software via Static Analysis},
+ booktitle = {Proc.~of POPL},
+ year = {2002},
+ isbn = {1-58113-450-9},
+ location = {Portland, Oregon},
+ pages = {1--3},
+ numpages = {3},
+ url = {http://doi.acm.org/10.1145/503272.503274},
+ doi = {10.1145/503272.503274},
+ acmid = {503274},
+} 
+
+@inproceedings{BelleIJCAI15,
+  author    = {Belle, Vaishak and Passerini, Andrea and Van den Broeck, Guy},
+  title     = {Probabilistic Inference in Hybrid Domains by Weighted Model Integration},
+  booktitle = {Proc.~of IJCAI},
+  year      = {2015},
+  pages = {2770--2776},
+ numpages = {7},
+
+}
+
+@inproceedings{BelleUAI15,
+  author    = {Belle, Vaishak and Van den Broeck, Guy and Passerini, Andrea},
+  title     = {Hashing-Based Approximate Probabilistic Inference in Hybrid Domains},
+  booktitle= {Proc.~of UAI},
+  year = {2015},
+  pages = {141--150},
+  numpages = {10},
+}
+
+@article{Kozen1981,
+title = "Semantics of probabilistic programs",
+journal = "Journal of Computer and System Sciences",
+volume = "22",
+number = "3",
+pages = "328 - 350",
+year = "1981",
+issn = "0022-0000",
+doi = "https://doi.org/10.1016/0022-0000(81)90036-2",
+url = "http://www.sciencedirect.com/science/article/pii/0022000081900362",
+author = "Dexter Kozen"
+}
+
+@book{Pearl1988,
+ author = {Pearl, Judea},
+ title = {Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference},
+ year = {1988},
+ isbn = {0-934613-73-7},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+} 
+
+@article{Roth1996,
+  title={On the hardness of approximate reasoning},
+  author={Roth, Dan},
+  journal={Artificial Intelligence},
+  volume={82},
+  number={1},
+  pages={273--302},
+  year={1996},
+  publisher={Elsevier}
+}
+
+@inproceedings{Kwiatkowska2011,
+author = {Kwiatkowska, Marta and Norman, Gethin and Parker, David},
+title = {PRISM 4.0: Verification of Probabilistic Real-time Systems},
+booktitle = {Proceedings of the 23rd International Conference on Computer Aided Verification},
+series = {CAV'11},
+year = {2011},
+isbn = {978-3-642-22109-5},
+location = {Snowbird, UT},
+pages = {585--591},
+numpages = {7},
+myurl = {http://dl.acm.org/citation.cfm?id=2032305.2032352},
+acmid = {2032352},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+}
+
+@Inbook{Hermanns2008,
+author="Hermanns, Holger
+and Wachter, Bj{\"o}rn
+and Zhang, Lijun",
+editor="Gupta, Aarti
+and Malik, Sharad",
+title="Probabilistic CEGAR ",
+bookTitle="Computer Aided Verification: 20th International Conference, CAV 2008 Princeton, NJ, USA, July 7-14, 2008 Proceedings",
+year="2008",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="162--175",
+abstract="Counterexample-guided abstraction refinement (CEGAR) has been en vogue for the automatic verification of very large systems in the past years. When trying to apply CEGAR to the verification of probabilistic systems, various foundational questions arise. This paper explores them in the context of predicate abstraction.",
+isbn="978-3-540-70545-1",
+doi="10.1007/978-3-540-70545-1_16",
+myurl="https://doi.org/10.1007/978-3-540-70545-1_16"
+}
+
+@inproceedings{Boutilier1996,
+ author = {Boutilier, Craig and Friedman, Nir and Goldszmidt, Moises and Koller, Daphne},
+ title = {Context-specific Independence in Bayesian Networks},
+ booktitle = {Proceedings of the Twelfth International Conference on Uncertainty in Artificial Intelligence},
+ series = {UAI'96},
+ year = {1996},
+ isbn = {1-55860-412-X},
+ location = {Portland, OR},
+ pages = {115--123},
+ numpages = {9},
+ url = {http://dl.acm.org/citation.cfm?id=2074284.2074298},
+ acmid = {2074298},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+} 
+
+@inproceedings{Huang2016,
+ author = {Huang, Daniel and Morrisett, Greg},
+ title = {An Application of Computable Distributions to the Semantics of Probabilistic Programming Languages},
+ booktitle = {Proceedings of the 25th European Symposium on Programming Languages and Systems - Volume 9632},
+ year = {2016},
+ isbn = {978-3-662-49497-4},
+ pages = {337--363},
+ numpages = {27},
+ url = {https://doi.org/10.1007/978-3-662-49498-1_14},
+ doi = {10.1007/978-3-662-49498-1_14},
+ acmid = {3089542},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {New York, NY, USA},
+ keywords = {Computable distributions, Probabilistic programs, Semantics},
+}
+
+@book{Kemeny93,
+  author    = {Kemeny, John G. and Snell, J. Laurie}, 
+  title     = {Finite Markov Chains},
+  publisher = {Springer-Verlag},
+  year      = 1993,
+  edition   = 2,
+  isbn      = {978-0-387-90192-3}
+}
+
+@article{Kschischang2006,
+ author = {Kschischang, F. R. and Frey, B. J. and Loeliger, H. -A.},
+ title = {Factor Graphs and the Sum-product Algorithm},
+ journal = {IEEE Trans. Inf. Theor.},
+ issue_date = {February 2001},
+ volume = {47},
+ number = {2},
+ month = sep,
+ year = {2006},
+ issn = {0018-9448},
+ pages = {498--519},
+ numpages = {22},
+ url = {http://dx.doi.org/10.1109/18.910572},
+ doi = {10.1109/18.910572},
+ acmid = {2266465},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+} 
+
+@book{Murphy2012,
+ author = {Murphy, Kevin P.},
+ title = {Machine Learning: A Probabilistic Perspective},
+ year = {2012},
+ isbn = {0262018020, 9780262018029},
+ publisher = {The MIT Press},
+}
+
+@inproceedings{Foster2016,
+ author = {Foster, Nate and Kozen, Dexter and Mamouras, Konstantinos and Reitblatt, Mark and Silva, Alexandra},
+ title = {Probabilistic NetKAT},
+ booktitle = {Proceedings of the 25th European Symposium on Programming Languages and Systems - Volume 9632},
+ year = {2016},
+ isbn = {978-3-662-49497-4},
+ pages = {282--309},
+ numpages = {28},
+ url = {http://dx.doi.org/10.1007/978-3-662-49498-1_12},
+ doi = {10.1007/978-3-662-49498-1_12},
+ acmid = {2958892},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {New York, NY, USA},
+} 
+
+@book{Halmos1974,
+ author = {Halmos, Paul},
+ title = {Measure theory},
+ year = {1974},
+ isbn = {0-387-90088-8},
+ publisher = {Springer},
+}
+
+@misc{InferNET14, 
+author = "Minka, T. and Winn, J.M. and Guiver, J.P. and Webster, S. and Zaykov, Y. and Yangel, B. and Spengler, A. and  Bronskill, J.",
+title = {{Infer.NET 2.6}},
+year = 2014,
+note = {Microsoft Research Cambridge. http://research.microsoft.com/infernet}
+}
+
+@incollection{Herbrich07,
+title = {TrueSkill\texttrademark : A Bayesian Skill Rating System},
+author = {Ralf Herbrich and Minka, Tom and Graepel, Thore},
+booktitle = {Advances in Neural Information Processing Systems 19},
+editor = {B. Sch\"{o}lkopf and J. C. Platt and T. Hoffman},
+pages = {569--576},
+year = {2007},
+publisher = {MIT Press},
+url = {http://papers.nips.cc/paper/3079-trueskilltm-a-bayesian-skill-rating-system.pdf}
+}
+
+@Article{complete2,
+  title =   "Observational Completeness on Abstract
+             Interpretation",
+  author =  "Gianluca Amato and Francesca Scozzari",
+  journal = "Fundam. Inform",
+  year =    "2011",
+  number =  "2-4",
+  volume =  "106",
+  bibdate = "2017-06-06",
+  bibsource =     "DBLP,
+             http://dblp.uni-trier.de/https://doi.org/10.3233/FI-2011-381;
+             DBLP,
+             http://dblp.uni-trier.de/db/journals/fuin/fuin106.html#AmatoS11",
+  pages =   "149--173",
+}
+
+@InProceedings{complete1,
+   title =   "Completeness in Abstract Interpretation: A Domain
+              Perspective",
+   author =  "Roberto Giacobazzi and Francesco Ranzato",
+   bibdate = "2017-05-23",
+   bibsource =     "DBLP,
+              http://dblp.uni-trier.de/db/conf/amast/amast97.html#GiacobazziR97;
+              DBLP,
+              http://dblp.uni-trier.de/https://doi.org/10.1007/BFb0000474",
+   booktitle =     "Algebraic Methodology and Software Technology, 6th
+              International Conference, AMAST '97, Sydney, Australia,
+              December 13-17, 1997, Proceedings",
+   publisher =     "Springer",
+   year =    "1997",
+   volume =  "1349",
+   booktitle =     "AMAST",
+   editor =  "Michael Johnson",
+   ISBN =    "3-540-63888-1",
+   pages =   "231--245",
+   series =  "Lecture Notes in Computer Science",
+ }
+@INPROCEEDINGS{Heunen2017, 
+author={C. Heunen and O. Kammar and S. Staton and H. Yang}, 
+booktitle={2017 32nd Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)}, 
+title={A convenient category for higher-order probability theory}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-12}, 
+doi={10.1109/LICS.2017.8005137}, 
+ISSN={}, 
+month={June},}
+
+@article{uncertain,
+  author    = {James Bornholt and
+               Todd Mytkowicz and
+               Kathryn S. McKinley},
+  title     = {Uncertain{\textless}T{\textgreater}: Abstractions for Uncertain Hardware
+               and Software},
+  journal   = {{IEEE} Micro},
+  volume    = {35},
+  number    = {3},
+  pages     = {132--143},
+  year      = {2015},
+  url       = {https://doi.org/10.1109/MM.2015.52},
+  doi       = {10.1109/MM.2015.52},
+  timestamp = {Sat, 20 May 2017 00:26:04 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/micro/BornholtMM15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{Neal10,
+  added-at = {2013-11-20T16:22:16.000+0100},
+  author = {Neal, Radford M.},
+  biburl = {https://www.bibsonomy.org/bibtex/233fcb1d5a6d675e371170820f0b4dbcd/giacomo.fiumara},
+  citeulike-article-id = {12118398},
+  interhash = {f26b3ec7720399d06a5c271916a0ee92},
+  intrahash = {33fcb1d5a6d675e371170820f0b4dbcd},
+  journal = {Handbook of Markov Chain Monte Carlo},
+  keywords = {Markov MonteCarlo},
+  pages = {113--162},
+  posted-at = {2013-03-06 23:35:00},
+  priority = {2},
+  timestamp = {2013-11-20T16:22:16.000+0100},
+  title = {{MCMC} Using {Hamiltonian} Dynamics},
+  volume = 54,
+  year = 2010
+}
+
+@inproceedings{Hur2015,
+author = {Hur, Chung-Kil and Nori, Aditya and Rajamani, Sriram},
+title = {A Provably Correct Sampler for Probabilistic Programs},
+booktitle = {Foundations of Software Technology and Theoretical Computer Science (FSTTCS)},
+year = {2015},
+month = {December},
+publisher = {Leibniz International Proceedings in Informatics},
+url = {https://www.microsoft.com/en-us/research/publication/a-provably-correct-sampler-for-probabilistic-programs/},
+address = {},
+pages = {},
+journal = {},
+volume = {},
+chapter = {},
+isbn = {},
+}
+
+@INPROCEEDINGS{Kwiatkowska2010, 
+author={M. Kwiatkowska and G. Norman and D. Parker}, 
+booktitle={2010 48th Annual Allerton Conference on Communication, Control, and Computing (Allerton)}, 
+title={Advances and challenges of probabilistic model checking}, 
+year={2010}, 
+volume={}, 
+number={}, 
+pages={1691-1698}, 
+keywords={distributed processing;formal verification;probability;software tools;stochastic processes;PRISM;distributed protocol;probabilistic model checking;software tool;stochastic behaviour;Biological system modeling;Computational modeling;IP networks;Markov processes;Mathematical model;Probabilistic logic;Protocols}, 
+doi={10.1109/ALLERTON.2010.5707120}, 
+ISSN={}, 
+month={Sept},}
+
+@inproceedings{Gordon2014,
+author = {Gordon, Andy and Henzinger, Thomas A. and Nori, Aditya and Rajamani, Sriram},
+title = {Probabilistic Programming},
+booktitle = {},
+year = {2014},
+month = {May},
+publisher = {IEEE},
+url = {https://www.microsoft.com/en-us/research/publication/probabilistic-programming/},
+address = {},
+pages = {},
+journal = {},
+volume = {},
+chapter = {},
+isbn = {},
+}
+
+@article{Schkufza2013,
+ author = {Schkufza, Eric and Sharma, Rahul and Aiken, Alex},
+ title = {Stochastic Superoptimization},
+ journal = {SIGPLAN Not.},
+ issue_date = {April 2013},
+ volume = {48},
+ number = {4},
+ month = mar,
+ year = {2013},
+ issn = {0362-1340},
+ pages = {305--316},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2499368.2451150},
+ doi = {10.1145/2499368.2451150},
+ acmid = {2451150},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {64-bit, binary, markov chain monte carlo, mcmc, smt, stochastic search, superoptimization, x86, x86-64},
+} 
+
+@article{Morgan1996,
+ author = {Morgan, Carroll and McIver, Annabelle and Seidel, Karen},
+ title = {Probabilistic Predicate Transformers},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ issue_date = {May 1996},
+ volume = {18},
+ number = {3},
+ month = may,
+ year = {1996},
+ issn = {0164-0925},
+ pages = {325--353},
+ numpages = {29},
+ url = {http://doi.acm.org/10.1145/229542.229547},
+ doi = {10.1145/229542.229547},
+ acmid = {229547},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Galois connection, nondeterminism, predicate transformers, probability, program derivation, refinement, weakest preconditions},
+} 
+
+@article{FerrerFioriti2015,
+ author = {Ferrer Fioriti, Luis Mar\'{\i}a and Hermanns, Holger},
+ title = {Probabilistic Termination: Soundness, Completeness, and Compositionality},
+ journal = {SIGPLAN Not.},
+ issue_date = {January 2015},
+ volume = {50},
+ number = {1},
+ month = jan,
+ year = {2015},
+ issn = {0362-1340},
+ pages = {489--501},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/2775051.2677001},
+ doi = {10.1145/2775051.2677001},
+ acmid = {2677001},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {probabilistic programs, program verification, supermartingales, termination},
+} 
+
+@article{Baier1997,
+author = {Baier, Christel and Clarke, Edmund M. and Hartonas-Garmhausen, Vasiliki and Kwiatkowska, Marta and Ryan, Mark},
+doi = {10.1007/3-540-63165-8_199},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Baier et al/Unknown/Symbolic Model Checking for Probabilistic Processes.pdf:pdf},
+isbn = {3-540-63165-8},
+issn = {16113349},
+pages = {430--440},
+title = {{Symbolic model checking for probabilistic processes}},
+url = {http://link.springer.com/10.1007/3-540-63165-8{\_}199},
+year = {1997}
+}
+
+@article{McIver2005,
+author = {McIver, Annabelle and Morgan, Carroll},
+doi = {10.1145/1059816.1059824},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/McIver, Morgan/ACM SIGMETRICS Performance Evaluation Review/10.1.1.584.4177.pdf:pdf},
+issn = {01635999},
+journal = {ACM SIGMETRICS Performance Evaluation Review},
+pages = {41--47},
+title = {{Abstraction and refinement in probabilistic systems}},
+volume = {32},
+year = {2005}
+}
+
+
+@article{Wang2018,
+author = {Wang, Di and Hoffmann, Jan},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Wang, Hoffmann/PLDI/WangHR17.pdf:pdf},
+journal = {PLDI},
+keywords = {expec-,pre-markov algebra,probabilistic program,program analysis,tation invariant},
+title = {{PMAF: An Algebraic Framework for Static Analysis of Probabilistic Programs}},
+year = {2018}
+}
+
+@article{Hermanns2008,
+abstract = {Counterexample-guided abstraction refinement (CEGAR) has been en vogue for the automatic verification of very large systems in the past years. When trying to apply CEGAR to the verification of probabilistic systems, various foundational questions arise. This paper explores them in the context of predicate abstraction.},
+annote = {* The adversary is actually a policy!},
+author = {Hermanns, Holger and Wachter, Bj{\"{o}}rn and Zhang, Lijun},
+doi = {10.1007/978-3-540-70545-1_16},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Hermanns, Wachter, Zhang/Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)/Hermanns, Wachter, Zhang - 2008 - Probabilistic CEGAR.pdf:pdf},
+isbn = {3540705430},
+issn = {03029743},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+pages = {162--175},
+title = {{Probabilistic CEGAR}},
+volume = {5123 LNCS},
+year = {2008}
+}
+
+
+@article{Sampson2014,
+author = {Sampson, Adrian and Panchekha, Pavel and Mytkowicz, Todd and McKinley, Kathryn S and Grossman, Dan and Ceze, Luis},
+doi = {10.1145/2594291.2594294},
+file = {:Users/sholtzen/Documents/Mendeley Desktop/Sampson et al/Proceedings of the 35th Conference on Programming Language Design and Implementation (PLDI)/Sampson et al. - 2014 - Expressing and Verifying Probabilistic Assertions.pdf:pdf},
+isbn = {978-1-4503-2784-8},
+issn = {15232867},
+journal = {Proceedings of the 35th Conference on Programming Language Design and Implementation (PLDI)},
+keywords = {approximate computing,data obfuscation,differential privacy,probabilistic programming,sensors,symbolic execution},
+pages = {112--122},
+title = {{Expressing and Verifying Probabilistic Assertions}},
+url = {http://doi.acm.org/10.1145/2594291.2594294},
+year = {2014}
+}
+
+@article{Scibior2017,
+ author = {\'{S}cibior, Adam and Kammar, Ohad and V\'{a}k\'{a}r, Matthijs and Staton, Sam and Yang, Hongseok and Cai, Yufei and Ostermann, Klaus and Moss, Sean K. and Heunen, Chris and Ghahramani, Zoubin},
+ title = {Denotational Validation of Higher-order Bayesian Inference},
+ journal = {Proc. ACM Program. Lang.},
+ issue_date = {January 2018},
+ volume = {2},
+ number = {POPL},
+ month = dec,
+ year = {2017},
+ issn = {2475-1421},
+ pages = {60:1--60:29},
+ articleno = {60},
+ numpages = {29},
+ url = {http://doi.acm.org/10.1145/3158148},
+ doi = {10.1145/3158148},
+ acmid = {3158148},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Bayesian inference, Kock integration, applied category theory, commutative monads, initial algebra semantics, quasi-Borel spaces, sigma-monoids, synthetic measure theory},
+} 
+
+@inproceedings{Dehnert2017ASI,
+  title={A storm is Coming: A Modern Probabilistic Model Checker},
+  author={Christian Dehnert and Sebastian Junges and Joost-Pieter Katoen and Matthias Volk},
+  booktitle={CAV},
+  year={2017}
+}
+
+@inproceedings{kwiatkowska2002prism,
+  title={PRISM: Probabilistic symbolic model checker},
+  author={Kwiatkowska, Marta and Norman, Gethin and Parker, David},
+  booktitle={International Conference on Modelling Techniques and Tools for Computer Performance Evaluation},
+  pages={200--204},
+  year={2002},
+  organization={Springer}
+}
+
+@inproceedings{nori2014r2,
+  title={R2: An efficient MCMC sampler for probabilistic programs},
+  author={Nori, Aditya and Hur, Chung-Kil and Rajamani, Sriram and Samuel, Selva},
+  booktitle={Twenty-Eighth AAAI Conference on Artificial Intelligence},
+  year={2014}
+}
+
+@article{pfeffer2009figaro,
+  title={Figaro: An object-oriented probabilistic programming language},
+  author={Pfeffer, Avi},
+  journal={Charles River Analytics Technical Report},
+  volume={137},
+  pages={96},
+  year={2009}
+}
+
+@inproceedings{pfeffer2001ibal,
+  title={IBAL: A probabilistic rational programming language},
+  author={Pfeffer, Avi},
+  booktitle={IJCAI},
+  pages={733--740},
+  year={2001},
+  organization={Citeseer}
+}
+
+@article{goodman2012church,
+  title={Church: a language for generative models},
+  author={Goodman, Noah and Mansinghka, Vikash and Roy, Daniel M and Bonawitz, Keith and Tenenbaum, Joshua B},
+  journal={arXiv preprint arXiv:1206.3255},
+  year={2012}
+}
+
+@inproceedings{wingate2011lightweight,
+  title={Lightweight implementations of probabilistic programming languages via transformational compilation},
+  author={Wingate, David and Stuhlm{\"u}ller, Andreas and Goodman, Noah},
+  booktitle={Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
+  pages={770--778},
+  year={2011}
+}
+
+@inproceedings{wang2018pmaf,
+  title={PMAF: an algebraic framework for static analysis of probabilistic programs},
+  author={Wang, Di and Hoffmann, Jan and Reps, Thomas},
+  booktitle={Proceedings of the 39th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages={513--528},
+  year={2018},
+  organization={ACM}
+}
+
+@inproceedings{narayanan2016probabilistic,
+  title={Probabilistic inference by program transformation in Hakaru (system description)},
+  author={Narayanan, Praveen and Carette, Jacques and Romano, Wren and Shan, Chung-chieh and Zinkov, Robert},
+  booktitle={International Symposium on Functional and Logic Programming},
+  pages={62--79},
+  year={2016},
+  organization={Springer}
+}
+
+@article{carpenter2017stan,
+  title={Stan: A probabilistic programming language},
+  author={Carpenter, Bob and Gelman, Andrew and Hoffman, Matthew D and Lee, Daniel and Goodrich, Ben and Betancourt, Michael and Brubaker, Marcus and Guo, Jiqiang and Li, Peter and Riddell, Allen},
+  journal={Journal of statistical software},
+  volume={76},
+  number={1},
+  year={2017},
+  publisher={Columbia Univ., New York, NY (United States); Harvard Univ., Cambridge, MA~…}
+}
+
+@article{Vakar2019,
+ author = {V\'{a}k\'{a}r, Matthijs and Kammar, Ohad and Staton, Sam},
+ title = {A Domain Theory for Statistical Probabilistic Programming},
+ journal = {Proc. ACM Program. Lang.},
+ issue_date = {January 2019},
+ volume = {3},
+ number = {POPL},
+ month = jan,
+ year = {2019},
+ issn = {2475-1421},
+ pages = {36:1--36:29},
+ articleno = {36},
+ numpages = {29},
+ url = {http://doi.acm.org/10.1145/3290349},
+ doi = {10.1145/3290349},
+ acmid = {3290349},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {adequacy, denotational semantics, domain theory, probability, recursion},
+} 

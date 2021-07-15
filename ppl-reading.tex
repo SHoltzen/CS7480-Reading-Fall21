@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage{natbib, palatino, fullpage, hyperref}
+\title{Probabilistic Programming Reading List}
+\author{Steven Holtzen\\\url{s.holtzen@northeastern.edu}}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  Test
+\end{abstract}
+
+\tableofcontents
+
+\section{Semantics}
+\begin{enumerate}
+\item \emph{Semantics of probabilistic programs}, \citep{Kozen1981}: One of the
+  original semantics papers on probabilistic programs, designed for verifying and
+  representing randomized algorithms.
+\item \emph{PMAF: an algebraic framework for static analysis of probabilistic
+    programs}, \citep{Wang2018}: Gives an algebraic semantics for manipulating
+  probabilistic programs; very recent.
+\item \citep{Borgstrom2013}: Measure transformer semantics
+\item \citep{Scibior2017}: Describe a semantics of recursive probabilistic
+  programs, discrete inference
+\item \citep{Vakar2019}: Domain theory for higher-order probabilistic programs
+\end{enumerate}
+
+\section{Probabilistic Program Analysis}
+
+\item \citep{Morgan1996}: Probabilistic predicate transformers
+\item \citep{FerrerFioriti2015}: Analysis of probabilistic termination.
+
+
+\section{Inference \& Systems}
+In general, inference methods can be divided into several broad categories:
+\begin{enumerate}
+\item \emph{Approximation} methods, which perform approximate inference either
+  via sampling or optimization.
+\item \emph{Compilation-based} methods, which perform inference by compiling
+  the probabilistic program into an alternative representation which supports
+  the kinds of queries that we care about.
+\item \emph{Symbolic} methods, which operate directly on the program (i.e.,
+  enumeration and block-based analyses).
+\end{enumerate}
+
+\subsection{Approximation Methods}
+
+\subsubsection{Sampling}
+
+\begin{enumerate}
+\item \citep{Hur2015}: Utilizes program analysis to improve Markov-Chain Monte Carlo.
+\item \citep{nori2014r2}: R2 sampling method
+\item \citep{goodman2012church}: Church
+\item \citep{wingate2011lightweight}: Sampling with program transformation
+\item \citep{carpenter2017stan}: Stan
+\end{enumerate}
+
+\subsubsection{Variational Approximations}
+
+\subsection{Compilation-based Methods}
+
+\begin{enumerate}
+\item \citep{Sampson2014}: Verifies that probabilistic assertions hold by
+  compiling the program to a graphical model.
+\item \citep{McCallum2009}: Factorie, a language for specifying factor graphs.
+\item \citep{InferNET14}: Infer.NET, compiles probabilistic programs to factor
+  graphs.
+\item \citep{pfeffer2009figaro}: Figaro, compiles to factor graphs
+\item \citep{pfeffer2001ibal}: Ibal, an early PPL which uses variable elimination
+\item \citep{Fierens2013}: ProbLog, compiles probabilistic logic programs to
+  weighted Boolean formulae.
+\end{enumerate}
+
+\subsection{Symbolic Methods}
+
+\begin{enumerate}
+\item \citep{Claret2013}: Performs inference by compiling probabilistic programs
+  to algebraic decision diagrams (ADDs).
+\item \citep{Sankaranarayanan:2013}: Approximates the probability with analyzing
+  a finite subset of paths
+\item \citep{Albarghouthi2017}: FairSquare, performs inference by approximating
+  integrating under each path in the program.
+\item \citep{BelleIJCAI15}: Approximate weighted model integration, a generalization of
+  SMT-solvers to perform integrals instead of just finding a satisfying assignment.
+\item \citep{Chistikov2015}: Performs inference using weighted model integration.
+\end{enumerate}
+
+\section{Program Transformations}
+In standard program analysis, a program transformation is a rewriting procedure
+which preserves the underlying semantics of the program; for example, the
+optimization phase of a compiler. In the context of probabilistic programs, the
+goal is to generalize well-known rewriting procedures to apply to programs with
+probabilistic semantics, in the hopes of easing analyses such as inference.
+
+\begin{enumerate}
+\item \citep{Hur2014}: Generalizes program slicing to the setting of
+  probabilistic programs with observations.
+\item \citep{McIver2005}: Abstraction and refinement in probabilistic systems;
+  extending the framework of program abstraction to verifying probabilistic
+  properties.
+\item \citep{wang2018pmaf}: PMAF, abstract interpretation for lower/upper bounds
+  on Bayesian inference
+\item \citep{narayanan2016probabilistic}: Hakaru, compiles programs into
+  posterior distributions
+\end{enumerate}
+
+
+\section{Probabilistic Model Checking}
+
+\begin{enumerate}
+\item \citep{Baier1997}: Early work on symbolic model checking for probabilistic
+  systems.
+\item \citep{Hermanns2008}: Probabilistic CEGAR, generalizes CEGAR to
+  probabilistic systems.
+\item \citep{Dehnert2017ASI}: Storm model checker
+\item \citep{kwiatkowska2002prism}: PRISM model checker
+\end{enumerate}
+
+\section{Applications}
+\begin{itemize}
+\item \citep{Foster2016}: Probabilistic network verification (ProbNetKat).
+\item \citep{Gordon2014}: Using probabilistic programs to define probabilistic
+  databases.
+\item \citep{Schkufza2013}: Stochastic super-optimization; treats optimization as
+  a search through a probability space over programs.
+
+\end{itemize}
+
+
+\bibliographystyle{plainnat}
+\bibliography{bib}
+\end{document}
